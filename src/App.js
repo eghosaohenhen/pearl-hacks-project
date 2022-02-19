@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import dog from './assets/wide_dog_cover2_.jpg';
 import './App.css';
+// import 'semantic-ui-css/semantic.min.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={dog} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lol funny funny 
         </p>
         <a
           className="App-link"
