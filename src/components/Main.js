@@ -1,6 +1,8 @@
 import dog from '../assets/wide_dog_cover2_.jpg';
 import React from 'react'
 import {  Button, Checkbox, Form, Message, Dropdown} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+
 
 function Main() {
     const [success, setSuccess] = React.useState("");
@@ -83,10 +85,12 @@ function Main() {
             <Form.Field>
                 <Checkbox label='Do you have a minor?' class="ui red header"/>
             </Form.Field>
-            <Button type='submit' color = 'green' onClick={(e) => {
+            <Link to="/Courses">
+                <Button type='submit' color = 'green' onClick={(e) => {
                 //setOpen(false);
                 handleSubmit();
-            }}>Submit</Button>
+                }}>Submit</Button>
+            </Link>
             </Form>
             <div id ="message">
                 {success &&
